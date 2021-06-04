@@ -1,0 +1,11 @@
+<p (click)="onClick()">gallery works!</p>
+
+{{ demoApps | json }}
+
+<ul *ngIf="active">
+  <li *ngFor="let app of demoApps">
+    {{ app.name }} - {{ app.author }}
+  </li>
+</ul>
+
+{{ mydate | date : 'YYYY' }}
